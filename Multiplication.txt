@@ -1,0 +1,28 @@
+﻿//MULTIPLICACIÓN - SANTIAGO JÁCOME
+
+INPUT
+STORE A
+
+INPUT
+STORE B
+
+LOOP, LOAD SUMA
+		ADD A
+        STORE SUMA
+        
+        LOAD B
+        SUBT UNO
+        STORE B
+        
+        SKIPCOND 400
+        JUMP LOOP
+
+LOAD SUMA
+OUTPUT
+
+HALT
+
+A, DEC 0
+B, DEC 0
+UNO, DEC 1
+SUMA, DEC 0
